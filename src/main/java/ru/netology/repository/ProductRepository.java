@@ -6,6 +6,7 @@ public class ProductRepository {
     private Product[] items = new Product[0];
 
 
+
     public void add(Product product) {                //сохранение
         Product[] tmp = new Product[items.length + 1];
         for (int i = 0; i < items.length; i++) {
@@ -16,9 +17,11 @@ public class ProductRepository {
         items = tmp;
     }
 
-    public Product[] findAll() {
+
+
+    public Product[] findAll() {   //получение всех сохраненных
         return items;
-    } //получение всех сохраненных
+    }
 
     public void removeById(int removeId) {                     //удаление по id
         Product[] tmp = new Product[items.length - 1];
@@ -31,7 +34,6 @@ public class ProductRepository {
 
         }
         items = tmp;
-
 
     }
 }

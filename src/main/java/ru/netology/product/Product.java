@@ -20,8 +20,8 @@ public class Product {
         return name;
     }
 
-//    public int getPrice() {
-//        return price;
-//    }
+    public int getPrice() {
+        return price;
+    }
 
 }
